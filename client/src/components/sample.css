@@ -1,0 +1,138 @@
+.project-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background-color: #f5f5f5;
+    padding: 20px;
+  }
+  
+  .project-card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    height: 100%;
+  }
+  .project-card:hover {
+    background-color: #EEB211;
+  }
+  
+  .project-card h2 {
+    margin-top: 0;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .project-details {
+    margin-bottom: 10px;
+  }
+  
+  .project-details p {
+    margin: 0;
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  
+  .project-description p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
+  .projectName {
+    color: #46166b;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 20px;
+  }
+  
+  .projectName:hover {
+    color: #46166b;
+    text-decoration: underline;
+  }
+  .project-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 0;
+    align-items: flex-start;
+    margin-left: 1px; 
+    width: 70%; 
+  }
+  
+  .project-card {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 1px;
+    align-items: center;
+    margin-bottom: 1px;
+    
+  }
+  
+  .project-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .project-details h2 {
+    margin-top: 0;
+  }
+  
+  .project-details-list {
+    margin-bottom: 5px;
+  }
+  
+  .project-details-list p {
+    margin: 0;
+  }
+  
+  ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  nav {
+    background-color: #333;
+    padding: 5px;
+    border-top: 1px solid #fff;
+  }
+  
+  .dashboardli{
+    margin: 0 30px;
+    padding : 6px 50px;
+    text-align: center;
+    font-size: larger;
+    color: white;
+    background-color: transparent;
+ 
+  }
+
+  .dashboardli:hover {
+    background-color: #EEB211;
+    padding: 6px 50px;
+    display: block;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+  }
+  
+  .project-department {
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 10px;
+  }
+
+
+  .signuplink{
+    color: #46166b;
+  }
+  
