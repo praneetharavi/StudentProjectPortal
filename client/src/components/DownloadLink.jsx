@@ -1,3 +1,8 @@
+/**
+ * @file DocumentView.jsx
+ * @description Component to generate download link.
+ * @author Praneetha Ravi
+ */
 import React from "react";
 
 function DownloadLink({ base64String, filename, type }) {

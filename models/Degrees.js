@@ -1,3 +1,7 @@
+
+/**
+ * @author Praneetha Ravi
+ */
 const mongoose = require("mongoose");
 const degreeSchema = mongoose.Schema(
   {

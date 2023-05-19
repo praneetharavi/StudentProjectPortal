@@ -1,3 +1,6 @@
+/**
+ * @author Praneetha Ravi
+ */
 const exjwt = require("express-jwt");
 const express = require("express");
 const jwt = require("jsonwebtoken");

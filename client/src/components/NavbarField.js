@@ -1,3 +1,8 @@
+/**
+ * @file NavField.js
+ * @description component file for navbar.
+ * @author Praneetha Ravi
+ */
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import "./NavbarField.css";

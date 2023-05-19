@@ -1,3 +1,8 @@
+/**
+ * @file starrating.jsx
+ * @description component file for star rating .
+ * @author Praneetha Ravi
+ */
 import React from 'react';
 import { FaStar, FaStarHalfAlt, FaRegStar } from 'react-icons/fa';
 
