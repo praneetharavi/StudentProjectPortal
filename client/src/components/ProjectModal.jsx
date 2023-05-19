@@ -2,7 +2,7 @@
  * @file projectModal.jsx
  * @description Well this is the main feature for the student and for our project. this is the jsx file and it is created for the AddNewProject featurewhere the student 
  * will be able to submit the new project. to submit the project student has to fill all the details in this page.
- * @author Tanoj kumar Innamuri
+ * @author Tanoj kumar Innamuri  and also took help from friend
  */
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
