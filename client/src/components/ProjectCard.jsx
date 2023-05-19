@@ -1,3 +1,8 @@
+/**
+ * @file projectCard.jsx
+ * @description this is jsx file for displaying the project within box in the home page for the users.
+ * @author Tanoj kumar Innamuri
+ */
 import React from 'react';
 import "./style.css";
 

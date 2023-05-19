@@ -1,3 +1,9 @@
+/**
+ * @file projectModal.jsx
+ * @description Well this is the main feature for the student and for our project. this is the jsx file and it is created for the AddNewProject featurewhere the student 
+ * will be able to submit the new project. to submit the project student has to fill all the details in this page.
+ * @author Tanoj kumar Innamuri
+ */
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
@@ -39,11 +45,11 @@ class ProjectModal extends Component {
     superVisorEmail: "",
     presenterSignatureFirstname: "",
     presenterSignatureLastname: "",
-    departmentList : [],
+    departmentList: [],
     projectDocument: "",
     projectDocumentFile: null,
     otherdocument: [],
-    departmentList : []
+    departmentList: []
   };
   handleClose = () => {
     this.setState({ show: false });
@@ -56,11 +62,11 @@ class ProjectModal extends Component {
   async componentDidMount() {
     await this.getdepartmentList();
     if (!this.props.disableAddNew) {
-     this.state.presenterFirstName =  localStorage.getItem("firstname");
+      this.state.presenterFirstName = localStorage.getItem("firstname");
       this.state.presenterLastName = localStorage.getItem("lastname");
       this.state.studentEmail = localStorage.getItem("email");
     }
-  
+
   }
 
 
@@ -200,14 +206,14 @@ class ProjectModal extends Component {
     );
     formData.append("singledocument", this.state.projectDocument);
     formData.append("otherdocument", this.state.otherdocument);
-  
+
     await axios
       .post("/api/projects/add", formData)
       .then(async (res) => {
         if (res.data === "OK") {
           // show success message and reset form on success
           toast.success("Project added successfully");
-  
+
           this.setState({
             show: false,
             name: "",
@@ -236,7 +242,7 @@ class ProjectModal extends Component {
         throw err; // re-throw the error so that it can be caught by a higher-level error handler if necessary
       });
   }
-  
+
 
   handleFileInput = (event) => {
     this.setState({ demoVideo: event.target.files[0] });
@@ -248,18 +254,18 @@ class ProjectModal extends Component {
   }
 
   render() {
-    const {  departmentList} = this.state;
+    const { departmentList } = this.state;
     let options = null;
 
-      options = departmentList.map((option) => (
-        <option key={option.DepartmentId} value={option.value}>
-          {option.DepartmentName}
-        </option>
-      ));
+    options = departmentList.map((option) => (
+      <option key={option.DepartmentId} value={option.value}>
+        {option.DepartmentName}
+      </option>
+    ));
     return (
       <>
-   
-      <form className="jotform-form" onSubmit={(e) => this.handleSubmit(e)}>
+
+        <form className="jotform-form" onSubmit={(e) => this.handleSubmit(e)}>
           <div role="main" className="form-all">
             <style
               dangerouslySetInnerHTML={{
@@ -346,7 +352,7 @@ class ProjectModal extends Component {
                 data-type="control_fullname"
                 id="id_12"
                 question-order={2}
-               
+
               >
                 <label
                   className="form-label form-label-top form-label-auto"
@@ -373,16 +379,16 @@ class ProjectModal extends Component {
                       style={{ verticalAlign: "top" }}
                       data-input-type="first"
                     >
-                 <input
-  type="text"
-  id="first_12"
-  name="presenterFirstName"
-  className="form-textbox validate[required]"
-  value={this.state.presenterFirstName}
-  onChange={(e) => this.handleChange(e)}
-  readOnly
-  required
-/>
+                      <input
+                        type="text"
+                        id="first_12"
+                        name="presenterFirstName"
+                        className="form-textbox validate[required]"
+                        value={this.state.presenterFirstName}
+                        onChange={(e) => this.handleChange(e)}
+                        readOnly
+                        required
+                      />
 
 
                       <label
@@ -636,13 +642,13 @@ class ProjectModal extends Component {
                 data-type="control_email"
                 id="id_15"
                 question-order={6}
-                
+
               >
                 <label
                   className="form-label form-label-top"
                   id="label_15"
                   htmlFor
-                
+
                 >
                   Email
                   <span
@@ -671,7 +677,7 @@ class ProjectModal extends Component {
                       size={310}
                       required
                       value={this.state.studentEmail}
-                readOnly
+                      readOnly
                     />
                     <label
                       className="form-sub-label"
@@ -1280,7 +1286,7 @@ class ProjectModal extends Component {
                   htmlFor="input_226"
                 >
                   Please select other document for project
-                
+
                 </label>
                 <div
                   id="cid_226"
@@ -1587,19 +1593,19 @@ class ProjectModal extends Component {
                   className="form-input-wide"
                   data-layout="half"
                 >
-                 <select
-            name="department"
-            className="form-control"
-            value={this.state.department}
-            onChange={this.handleChange}
-          >
-            <option value="">Select your department ......</option>
-            {departmentList.map((item) => (
-                <option key={item.DepartmentId} value={item.value}>
-                {item.DepartmentName}
-              </option>
-            ))}
-          </select>
+                  <select
+                    name="department"
+                    className="form-control"
+                    value={this.state.department}
+                    onChange={this.handleChange}
+                  >
+                    <option value="">Select your department ......</option>
+                    {departmentList.map((item) => (
+                      <option key={item.DepartmentId} value={item.value}>
+                        {item.DepartmentName}
+                      </option>
+                    ))}
+                  </select>
                 </div>
               </li>
 
@@ -1730,8 +1736,8 @@ class ProjectModal extends Component {
           pauseOnHover
         />
       </>
-      
-     
+
+
     );
   }
 }

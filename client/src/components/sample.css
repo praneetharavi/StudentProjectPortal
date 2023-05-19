@@ -1,4 +1,8 @@
-.project-list {
+/**
+ * @file sample.css
+ * @author Tanoj kumar Innamuri
+ */
+ .project-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;

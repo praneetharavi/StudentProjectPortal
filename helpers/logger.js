@@ -1,3 +1,7 @@
+/**
+ * @file logger.js
+ * @author Tanoj kumar Innamuri
+ */
 const winston = require("winston");
 const format = winston.format;
 const transports = winston.transports;

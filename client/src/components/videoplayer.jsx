@@ -1,3 +1,8 @@
+/**
+ * @file videoplayer.jsx
+ * @description this file is created to display the project title an dthe description and creation date.
+ * @author Tanoj kumar Innamuri
+ */
 import './sample.css';
 import React, { useState, useEffect } from 'react';
 
@@ -15,23 +20,23 @@ const ProjectList = () => {
   }, []);
 
   return (
-  
-        <div className="project-list">
-          {projects.map((project) => (
-            <div className="project-card" key={project.id}>
-              <h2>{project.name}</h2>
-              <div className="project-details">
-                <p><strong>Team Members:</strong> {project.teamMembers.join}</p>
-                <p><strong>Creation Date:</strong> {project.creationDate}</p>
-              </div>
-              <div className="project-description">
-                <p>{project.description}</p>
-              </div>
-            </div>
-          ))}
+
+    <div className="project-list">
+      {projects.map((project) => (
+        <div className="project-card" key={project.id}>
+          <h2>{project.name}</h2>
+          <div className="project-details">
+            <p><strong>Team Members:</strong> {project.teamMembers.join}</p>
+            <p><strong>Creation Date:</strong> {project.creationDate}</p>
+          </div>
+          <div className="project-description">
+            <p>{project.description}</p>
+          </div>
         </div>
-      );
-    
+      ))}
+    </div>
+  );
+
 };
 
 export default ProjectList;

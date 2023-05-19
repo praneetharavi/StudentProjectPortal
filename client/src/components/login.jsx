@@ -1,3 +1,8 @@
+/**
+ * @file login.jsx
+ * @description this file is created for the login page where the users can login into the portal with their email address and password. and if they don't have an account i have given a option to navigate to register page.
+ * @author Tanoj kumar Innamuri
+ */
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import url from "../utils/url_config";
@@ -118,7 +123,7 @@ class Login extends Component {
                   </div>
                 </form>
                 <p className="mb-0" >
-                  <Link to={url.register}  className="signuplink text-center">
+                  <Link to={url.register} className="signuplink text-center">
                     Not a Member? Register
                   </Link>
                 </p>

@@ -1,3 +1,9 @@
+/**
+ * @file register.jsx
+ * @description this is jsx file which is created for the users where they are able to register 
+ * into our app. even if they are student or viewer or reviewer.
+ * @author Tanoj kumar Innamuri
+ */
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import url from "../utils/url_config";
@@ -22,16 +28,16 @@ class Register extends Component {
       department: "",
       errorMessages: [],
       successMessages: [],
-      departmentList : []
+      departmentList: []
     };
   }
 
   handleSubmit(e) {
     e.preventDefault();
-    if (this.state.role === 'Student' ||this.state. role === 'Rewiewer') {
+    if (this.state.role === 'Student' || this.state.role === 'Rewiewer') {
       const emailRegex = /^[^\s@]+@albany\.edu$/;
       const isValidEmail = emailRegex.test(this.state.email);
-      if(!isValidEmail){
+      if (!isValidEmail) {
         toast.error("Check Email Address Format");
       }
     }
@@ -107,32 +113,32 @@ class Register extends Component {
     const { name, value } = event.target;
     this.setState({ [name]: value });
   }
-  
-  
-  
+
+
+
   render() {
-    const {  departmentList} = this.state;
+    const { departmentList } = this.state;
     let options = null;
 
-      options = departmentList.map((option) => (
-        <option key={option.DepartmentId} value={option.value}>
-          {option.DepartmentName}
-        </option>
-      ));
-    
+    options = departmentList.map((option) => (
+      <option key={option.DepartmentId} value={option.value}>
+        {option.DepartmentName}
+      </option>
+    ));
+
     return (
       <div>
         <NavbarField showLogout={false} />
         <div className="hold-transition register-page">
           <h1>Student Project Portal</h1>
-      
+
           <div className="register-box">
             <div className="register-logo">
               <a href="#"></a>
             </div>
             <div className="card">
               <div className="card-body register-card-body">
-               
+
                 <form action="" method="post">
                   <div className="input-group mb-3">
                     <input
@@ -190,7 +196,7 @@ class Register extends Component {
                       <option value={"Rewiewer"}>Rewiewer</option>
                     </select>
                   </div>
-            
+
                   <div className="input-group mb-3">
                     <input
                       type="email"
@@ -205,10 +211,10 @@ class Register extends Component {
                       </div>
                     </div>
                     <span className="small text-muted">
-  @albany.edu if you are a student or a reviewer.
-</span>
+                      @albany.edu if you are a student or a reviewer.
+                    </span>
                   </div>
-         
+
                   <div className="input-group mb-3">
                     <input
                       type="password"
@@ -239,17 +245,17 @@ class Register extends Component {
                   </div>
 
                   <div className="input-group mb-3">
-                  <select
-                                name="department"
-                                className="filter-dropdown-height react-select theme-light react-select__control filter-dropdown-height is-untouched is-pristine av-valid form-control"
-                                onChange={this.handleChange}
-                                value= {this.state.department}
-                              >
-                                <option value="" disabled="">
-                                  Select Department
-                                </option>
-                                {options}
-                              </select>
+                    <select
+                      name="department"
+                      className="filter-dropdown-height react-select theme-light react-select__control filter-dropdown-height is-untouched is-pristine av-valid form-control"
+                      onChange={this.handleChange}
+                      value={this.state.department}
+                    >
+                      <option value="" disabled="">
+                        Select Department
+                      </option>
+                      {options}
+                    </select>
 
                   </div>
                   <div className="row">

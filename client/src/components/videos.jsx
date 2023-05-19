@@ -1,3 +1,8 @@
+/**
+ * @file videos.jsx
+ * @description this is the file for the projects can be approved by the professor when user is logged in as a reviewer. where we have given the the buttion for those.
+ * @author Tanoj kumar Innamuri
+ */
 import React, { Component } from 'react';
 import NavbarField from "./NavbarField";
 import axios from "axios";

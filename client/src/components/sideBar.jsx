@@ -1,3 +1,8 @@
+/**
+ * @file sideBar.jsx
+ * @description this is .jsx file created for the side bar where we will show to the users home login register buttions. and we have also given that if the user signed into the portal then we will display the home logout and their first and last names.
+ * @author Tanoj kumar Innamuri
+ */
 import React, { Component } from "react";
 
 import url from "../utils/url_config";

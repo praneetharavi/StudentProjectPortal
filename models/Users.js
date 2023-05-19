@@ -1,3 +1,7 @@
+/**
+ * @file Users.js
+ * @author Tanoj kumar Innamuri
+ */
 const mongoose = require("mongoose");
 const bcrypt = require("bcrypt");
 const validator = require("validator");

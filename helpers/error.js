@@ -1,3 +1,7 @@
+/**
+ * @file error.js
+ * @author Tanoj kumar Innamuri
+ */
 const logger = require("./logger");
 
 class APIError extends Error {

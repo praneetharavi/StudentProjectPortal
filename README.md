@@ -1,4 +1,4 @@
-# studentPortal
+# studentProjectPortal
 
 # To run application on your local machine
 
