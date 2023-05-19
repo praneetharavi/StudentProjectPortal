@@ -1,3 +1,9 @@
+/**
+ * @file dashboard.jsx
+ * @description Component for project list in home page.
+ * @author Praneetha Ravi took help from friend but replaced all his code by me
+ */
+
 import React, { Component, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import axios from "axios";

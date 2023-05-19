@@ -1,3 +1,8 @@
+/**
+ * @file photosview.jsx
+ * @description component file for photos view.
+ * @author Praneetha Ravi
+ */
 import React, { Component } from 'react';
 import NavbarField from "./NavbarField";
 import axios from "axios";

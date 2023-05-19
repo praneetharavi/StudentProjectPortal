@@ -1,3 +1,8 @@
+/**
+ * @file Home.jsx
+ * @description Component where navfield resides.
+ * @author Praneetha Ravi
+ */
 import React, { Component } from "react";
 import Dashborad from "./dashboard";
 import NavbarField from "./NavbarField";

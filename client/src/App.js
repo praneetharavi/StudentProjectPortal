@@ -1,3 +1,8 @@
+/**
+ * @file App.js
+ * @description  Main react component
+ * @author Praneetha Ravi
+ */
 import React from "react";
 import {
   BrowserRouter as Router,
@@ -190,7 +195,7 @@ class App extends React.Component {
               );
             }}
           />
-
+{/* Took help from friend*/}
           <Route
             exact
             path={url.videosview}
@@ -201,6 +206,7 @@ class App extends React.Component {
             path={url.photosview}
             render={(props) => <PhotosView {...props} additionalProp="value" />}
           />
+
 
           <Route
             exact

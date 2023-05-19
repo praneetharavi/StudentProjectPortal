@@ -1,3 +1,6 @@
+/**
+ * @author Praneetha Ravi
+ */
 const reqlib = require("app-root-path");
 module.exports = {
   combinedLogFile: reqlib + "/logs/combined.log",

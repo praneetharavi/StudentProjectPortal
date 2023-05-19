@@ -1,3 +1,6 @@
+/**
+ * @author Praneetha Ravi
+ */
 const mongoose = require("mongoose");
 const departmentSchema = mongoose.Schema(
   {

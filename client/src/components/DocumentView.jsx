@@ -1,3 +1,8 @@
+/**
+ * @file DocumnetView.jsx
+ * @description Component for document view.
+ * @author Help from friend
+ */
 import React, { Component } from "react";
 import NavbarField from "./NavbarField";
 import axios from "axios";

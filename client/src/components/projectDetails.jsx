@@ -1,3 +1,8 @@
+/**
+ * @file projectdetails.jsx
+ * @description component file for project details page.
+ * @author Praneetha Ravi
+ */
 import React, { Component } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import axios from "axios";
